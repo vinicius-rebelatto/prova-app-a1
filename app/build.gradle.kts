@@ -61,6 +61,8 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.firebase.common.ktx)
+    implementation(libs.firebase.firestore.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -68,8 +70,15 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-/*
-    implementation(platform(libs.firebase.bom))
+    implementation("androidx.compose.ui:ui:1.0.1")
+    implementation("androidx.compose.material3:material3:1.0.1")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.0.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:1.0.0-alpha07")
+    implementation("com.google.firebase:firebase-firestore:24.0.1")
+
+
+    implementation(platform("com.google.firebase:firebase-bom:33.6.0"))
+    /*implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.analytics)
     implementation(libs.firebase.firestore.ktx)*/
 }
